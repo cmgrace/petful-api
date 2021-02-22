@@ -1,23 +1,57 @@
+class Node {
+  constructor(val) {
+    this.val = val;
+    this.next = null;
+  }
+}
 class Queue {
   constructor() {
-    // Set initial data.
+    this.first = null;
+    this.last = null;
+    this.size = 0;
   }
 
-  enqueue(data) {
-    // Add some data to the queue.
+  enqueue(val) {
+    let newNode = new Node(val);
+    if (!this.first) {
+      this.first = newNode;
+      this.last = newNode;
+    } else {
+      this.last.next = newNode;
+      this.last = newNode;
+    }
   }
 
   dequeue() {
-    // Remove some data from the queue.
+    if (!this.first) return null;
+    const temp = this.first;
+    if (this.first === this.last) {
+      this.last = null;
+    }
+
+    this.first = this.first.next;
+    this.size--;
+    return temp.val;
   }
 
   show() {
-    // Return the next item in the queue.
+    if (!this.first) return null;
+    const temp = this.first;
+    return temp.val;
   }
 
   all() {
-    // Return all items in the queue.
+    if (!this.first) return null;
+
+    let tempArr = [];
+    let temp = this.first;
+
+    while (temp) {
+      tempArr.push(temp.val);
+      temp = temp.next;
+    }
+    return tempArr.join(",");
   }
 }
 
-module.exports = Queue
+module.exports = Queue;
