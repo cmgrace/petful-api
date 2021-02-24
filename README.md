@@ -1,6 +1,10 @@
 # Petful Server
 
+<<<<<<< HEAD
 Live application: [https://petful-client-tawny.vercel.app/](https://petful-client-tawny.vercel.app/)<br/>
+=======
+Live application: [https://amazon-client.cmgrace.vercel.app/](https://amazon-client.cmgrace.vercel.app/)<br/>
+>>>>>>> f12c1e2cde3ac01dd3f1a1775ff1a7f4cfe93dc2
 Server: [https://warm-reaches-49846.herokuapp.com/](https://warm-reaches-49846.herokuapp.com/)
 
 ## API Documentation
@@ -18,11 +22,19 @@ Server: [https://warm-reaches-49846.herokuapp.com/](https://warm-reaches-49846.h
 ```
 
     DELETE /api/people: Delete the first person in the queue.
+<<<<<<< HEAD
 
     POST /api/people: Add person to the tail of the queue.
 
     GET /api/pets: Return all pets in queue including cats and dogs.
 
+=======
+    
+    POST /api/people: Add person to the tail of the queue.
+    
+    GET /api/pets: Return all pets in queue including cats and dogs.
+    
+>>>>>>> f12c1e2cde3ac01dd3f1a1775ff1a7f4cfe93dc2
 ```
 dogs: [
     {
@@ -42,7 +54,11 @@ dogs: [
       breed: 'Bengal',
       description: 'Orange bengal cat with black stripes lounging on concrete.',
       gender: 'Female',
+<<<<<<< HEAD
       imageURL:'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+=======
+      imageURL:'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 
+>>>>>>> f12c1e2cde3ac01dd3f1a1775ff1a7f4cfe93dc2
       name: 'Steve French',
       story: 'Thrown on the street'
     }
@@ -50,9 +66,15 @@ dogs: [
 }
 
 ```
+<<<<<<< HEAD
 
     DELETE /api/pets: Delete the first animal in both of the dog queue and cat queue.
 
+=======
+    
+    DELETE /api/pets: Delete the first animal in both of the dog queue and cat queue.
+    
+>>>>>>> f12c1e2cde3ac01dd3f1a1775ff1a7f4cfe93dc2
     GET /api/cat: Return the first cat in cat queue.
 
 ```
@@ -61,7 +83,11 @@ dogs: [
       breed: 'Bengal',
       description: 'Orange bengal cat with black stripes lounging on concrete.',
       gender: 'Female',
+<<<<<<< HEAD
       imageURL:'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+=======
+      imageURL:'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', 
+>>>>>>> f12c1e2cde3ac01dd3f1a1775ff1a7f4cfe93dc2
       name: 'Steve French',
       story: 'Thrown on the street'
     }
