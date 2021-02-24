@@ -50,7 +50,7 @@ class Queue {
       tempArr.push(temp.val);
       temp = temp.next;
     }
-    return tempArr.join(",");
+    return tempArr;
   }
 }
 

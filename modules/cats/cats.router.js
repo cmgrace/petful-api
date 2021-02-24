@@ -1,12 +1,15 @@
 const express = require("express");
-
-const Pets = require("../pets/pets.service");
-
+const catsService = require("./cats-service");
 const router = express.Router();
 
-router.get("/cats", (req, res) => {
-  const cat = Pets.getCat();
-  return res.status(200).json(cat);
-});
+router
+  .get("/cats", (req, res) => {
+    const cat = catsService.getCat();
+    return res.status(200).json(cat);
+  })
+  .delete("/cats", (req, res) => {
+    catsService.dequeue();
+    res.status(200).end();
+  });
 
 module.exports = router;
